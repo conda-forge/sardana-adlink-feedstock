@@ -1,5 +1,5 @@
 {% set name = "sardana-adlink" %}
-{% set version = "2.0.1" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/ALBA-Synchrotron/sardana-adlink/archive/{{ version }}.tar.gz
-  sha256: cfa505cbe3dc8a7c44567c80a8b89255719e498807481183e03c6f925ff91ebd
+  sha256: a18ad6a53e9fec53d1b51614379d5ecbb1536f1104e96cbd40d8badd192460f0
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
